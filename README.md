@@ -20,5 +20,5 @@ And I would've also swapped out the arrow, envelope and phone icons as they seem
 
 ## Feedback about provided assets
 It would have been better if the icons (envelope, phone, arrow) would have been svg-s as they will appear more 'crisp' and offers more flexibility aswell.
-The overall header or hero image could've been provided separately: background and logo. The heading text would've been better to include into the HTML as h1 element. It would've improved the page's SEO, too.
+The overall header or hero image could've been provided separately: background and logo. The heading text would've been better to include into the HTML as h1 element. It would've improved the page's SEO, too. Also it would've made life easier for me as a developer to scale the hero section better.
 I wish the mockups 'mobile' and 'desktop' would have also included the measures for paddings/margins, font sizes etc. Currently I made it visually as close as possible by eye and basic pixel measurement.
