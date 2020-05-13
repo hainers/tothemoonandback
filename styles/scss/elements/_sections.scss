@@ -4,7 +4,7 @@
 	&--hero {
 		position: relative;
 		height: 238px;
-		background: url('/assets/images/mobile-top.png') no-repeat center top;
+		background: url('../assets/images/mobile-top.png') no-repeat center top;
 		background-size: auto 100%;
 	}
 
@@ -13,11 +13,11 @@
 	}
 
 	&--content {
-		background: url('/assets/images/pattern.png');
+		background: url('../assets/images/pattern.png');
 	}
 
 	&--info {
-		background: url('/assets/images/mobile-mid.png') no-repeat;
+		background: url('../assets/images/mobile-mid.png') no-repeat;
 		background-size: cover;
 		color: $white;
 	}
@@ -45,7 +45,7 @@
 
 @media only screen and (min-width: $mobile) {
 	.section--info {
-		background-image: url('/assets/images/middle.png');
+		background-image: url('../assets/images/middle.png');
 	}
 }
 
@@ -54,7 +54,7 @@
 		padding: 32px 0;
 
 		&--hero {
-			background-image: url('/assets/images/top.png');
+			background-image: url('../assets/images/top.png');
 			height: 60vh;
 		}
 
