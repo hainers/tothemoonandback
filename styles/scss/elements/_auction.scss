@@ -1,0 +1,120 @@
+.auction {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__title {
+		flex: 1 0 100%;
+		margin: 24px 0;
+		text-align: center;
+		line-height: 1.3;
+	}
+
+	&__info {
+		flex: 0 0 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 8px;
+
+		&--price {
+			order: 1; //. need to reorder it since the date is too long and breaks the layout/design in mobile
+		}
+
+		&--bids {
+			order: 2; //. need to reorder it since the date is too long and breaks the layout/design in mobile
+		}
+
+		&--end-date {
+			flex: 0 0 100%;
+			margin-top: 0;
+		}
+	}
+
+	&__info-highlight {
+		margin-bottom: 8px;
+		color: #fb6520;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&__image {
+		display: flex;
+		justify-content: center;
+		
+		figcaption {
+			display: none;
+		}
+	}
+
+	&__img {
+		max-height: 220px;
+	}
+
+}
+
+.auction-response {
+	display: flex;
+	align-items: center;
+	min-height: 220px;
+
+	&__icon {
+		margin-right: 8px;
+		color: $red;
+		font-size: 24px;
+	}
+
+	&__message {
+		margin: 0;
+		color: $red;
+	}
+}
+
+@media only screen and (min-width: $tablet) {
+	.auction {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+
+		&__image {
+			flex: 0 0 40%;
+		}
+
+		&__content {
+			flex: 0 0 60%;
+		}
+
+		&__title {
+			margin-top: 0;
+		}
+
+		&__info {
+			flex: 0 0 33%;
+			margin-top: 0;
+
+			&--price,
+			&--bids {
+				order: 0;
+			}
+		}
+
+		&__info-highlight {
+			font-size: 18px;
+		}
+	}
+}
+
+@media only screen and (min-width: $laptop) {
+	.auction {
+
+		&__info-highlight {
+			margin-bottom: 16px;
+			font-size: 24px;
+		}
+	}
+}

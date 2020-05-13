@@ -1,0 +1,45 @@
+@import 'scss/base/variables';
+@import 'scss/base/grid';
+@import 'scss/base/typography';
+
+
+@import 'scss/elements/sections';
+@import 'scss/elements/auction';
+@import 'scss/elements/contact-item';
+
+[v-cloak] {
+	display: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #2c3e50;
+}
+
+address {
+	font-style: normal;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+
+@media only screen and(min-width: 720px) {
+	.show-on-sm {
+		display: none;
+	}
+}
+
+#map {
+	height: 420px;
+	width: 100%;
+}

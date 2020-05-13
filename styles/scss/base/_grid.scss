@@ -1,0 +1,59 @@
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.grid-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 16px;
+
+	&--full-width {
+		max-width: 100%;
+
+		> .grid-row { //. avoid unnecessary double padding if nested directly inside one-another
+			padding: 0;
+		}
+	}
+}
+
+.grid-item {
+	margin: 8px 0;
+	padding: 16px;
+
+	&--100 {
+		flex: 0 0 100%;
+	}
+
+	&--sm-100 {
+		flex: 0 0 100%;
+	}
+}
+
+@media only screen and (min-width: $tablet) {
+	.grid-item {
+		&--md-33 {
+			flex: 0 0 50%;
+			background: red;
+		}
+
+		&--md-50 {
+			flex: 0 0 50%;
+		}
+	}
+}
+
+@media only screen and (min-width: $laptop) {
+	.grid-row {
+		padding: 0;
+	}
+}
+
+@media only screen and (min-width: $desktop) {
+	.container {
+		padding: 0 24px;
+	}
+}

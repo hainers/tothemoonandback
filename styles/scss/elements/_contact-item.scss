@@ -1,0 +1,14 @@
+.contact-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+
+	&__icon {
+		margin-right: 12px;
+	}
+
+	&__info {
+		color: $dark;
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,41 @@
+h2 {
+	margin: 0 0 24px;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+p {
+	margin-bottom: 32px;
+	line-height: 1.5;
+}
+
+
+.list {
+	padding-left: 18px;
+	margin-bottom: 0;
+	list-style-type: circle;
+
+	&__item {
+		margin-bottom: 32px;
+		line-height: 1.5;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media only screen and (min-width: $tablet) {
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+}

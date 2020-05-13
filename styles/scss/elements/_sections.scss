@@ -1,0 +1,102 @@
+.section {
+	padding: 0;
+
+	&--hero {
+		position: relative;
+		height: 238px;
+		background: url('/assets/images/mobile-top.png') no-repeat center top;
+		background-size: auto 100%;
+	}
+
+	&__scroll-icon--hero {
+		display: none;
+	}
+
+	&--content {
+		background: url('/assets/images/pattern.png');
+	}
+
+	&--info {
+		background: url('/assets/images/mobile-mid.png') no-repeat;
+		background-size: cover;
+		color: $white;
+	}
+
+	&--maps {}
+
+	&--auction {
+		justify-content: center;
+		padding: 24px 16px;
+
+		.auction-section__title {
+			flex-basis: 100%;
+			margin-top: 0;
+			color: $gray;
+			font-weight: 600;
+		}
+	}
+
+	&--no-paddings {
+		padding: 0!important;
+	}
+
+
+}
+
+@media only screen and (min-width: $mobile) {
+	.section--info {
+		background-image: url('/assets/images/middle.png');
+	}
+}
+
+@media only screen and (min-width: $tablet) {
+	.section {
+		padding: 32px 0;
+
+		&--hero {
+			background-image: url('/assets/images/top.png');
+			height: 60vh;
+		}
+
+		&--auction {
+			padding: 32px 16px;
+		}
+
+		&__scroll-icon--hero {
+			position: absolute;
+			bottom: 24px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: block;
+		}
+	}
+}
+
+@media only screen and (min-width: $tablet-big) {
+	.section {
+		&--hero {
+			height: 70vh;
+		}
+	}
+}
+
+@media only screen and (min-width: $laptop) {
+	.section {
+		padding: 48px 0;
+
+		&--hero {
+			height: 83vh;
+		}
+
+		&--auction {
+			padding: 32px 0 64px;
+		}
+	}
+}
+
+@media only screen and (min-width: $desktop) {
+	.section {
+		padding: 64px 0;
+
+	}
+}
