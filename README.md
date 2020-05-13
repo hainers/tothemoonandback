@@ -13,7 +13,7 @@ The biggest thing I noticed about the design was that spacing (headings,sections
 In my test project I equalized the spacings and sizes in all the sections.
 I also changed the design in narrow mobile screens: the auction info in three columns didn't fit when long end_date is present so I decided to wrap price and bidcount to another row. 
 If the API doesn't return an end date then 'puudub' will be displayed instead.
-And I would've also swapped out the envelope and phone icons as they seemed to heavy and thick for the design. 
+And I would've also swapped out the arrow, envelope and phone icons as they seemed to heavy and thick for the design. 
 
 ## Feedback about provided assets
 It would have been better if the icons (envelope, phone, arrow) would have been svg-s as they will appear more 'crisp' and offers more flexibility aswell.
