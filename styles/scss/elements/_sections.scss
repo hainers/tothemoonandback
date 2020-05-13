@@ -1,6 +1,23 @@
 .section {
 	padding: 0;
 
+	&__heading {
+
+		&--dark {
+			margin-bottom: 16px;
+			color: $dark;
+		}
+
+		&--light {
+			margin-bottom: 40px;
+			color: $white;
+		}
+
+		&--small {
+			margin-bottom: 32px;
+		}
+	}
+
 	&--hero {
 		position: relative;
 		height: 238px;
@@ -13,20 +30,25 @@
 	}
 
 	&--content {
+		padding: 12px 0;
 		background: url('../assets/images/pattern.png');
 	}
 
 	&--info {
+		padding: 14px 0;
 		background: url('../assets/images/mobile-mid.png') no-repeat;
 		background-size: cover;
 		color: $white;
 	}
 
-	&--maps {}
+	&--maps {
+		height: 420px;
+		width: 100%;
+	}
 
 	&--auction {
 		justify-content: center;
-		padding: 24px 16px;
+		padding: 40px 16px;
 	}
 
 	&--no-paddings {
@@ -36,19 +58,27 @@
 
 }
 
-@media only screen and (min-width: $mobile) {
+@media only screen and (min-width: $sm) {
 	.section--info {
 		background-image: url('../assets/images/middle.png');
 	}
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $md) {
 	.section {
 		padding: 32px 0;
 
+		&__heading {
+
+			&--dark {
+				margin-bottom: 28px;
+			}
+		}
+
 		&--hero {
-			background-image: url('../assets/images/top.png');
-			height: 60vh;
+			background: url('../assets/images/top.png') no-repeat center;
+			background-size: cover;
+			height: 600px;
 		}
 
 		&--auction {
@@ -65,31 +95,27 @@
 	}
 }
 
-@media only screen and (min-width: $tablet-big) {
+@media only screen and (min-width: $md-l) {
 	.section {
 		&--hero {
-			height: 70vh;
+			height: 700px;
 		}
 	}
 }
 
-@media only screen and (min-width: $laptop) {
+@media only screen and (min-width: $lg) {
 	.section {
 		padding: 48px 0;
 
-		&--hero {
-			height: 83vh;
-		}
-
 		&--auction {
-			padding: 32px 0 64px;
+			padding: 32px 0 72px;
 		}
 	}
 }
 
-@media only screen and (min-width: $desktop) {
+@media only screen and (min-width: $xl) {
 	.section {
-		padding: 64px 0;
+		padding: 72px 0;
 
 	}
 }

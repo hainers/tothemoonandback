@@ -83,14 +83,32 @@
 	}
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $xs) {
+	.auction {
+		&__info {
+
+			&--price,
+			&--bids {
+				order: 0;
+				flex: 0 1 28%;
+			}
+
+			&--end-date {
+				flex: 1 0 33%;
+				margin-top: 8px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $md) {
 	.auction {
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
 
 		&__image {
-			flex: 0 0 40%;
+			flex: 0 1 40%;
 		}
 
 		&__content {
@@ -102,13 +120,7 @@
 		}
 
 		&__info {
-			flex: 0 0 33%;
 			margin-top: 0;
-
-			&--price,
-			&--bids {
-				order: 0;
-			}
 		}
 
 		&__info-highlight {
@@ -117,7 +129,7 @@
 	}
 }
 
-@media only screen and (min-width: $laptop) {
+@media only screen and (min-width: $lg) {
 	.auction {
 
 		&__info-highlight {

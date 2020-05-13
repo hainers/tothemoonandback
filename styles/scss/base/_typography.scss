@@ -1,5 +1,5 @@
 h2 {
-	margin: 0 0 24px;
+	margin: 0 0 16px;
 	font-size: 20px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -7,6 +7,8 @@ h2 {
 
 h3 {
 	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 p {
@@ -14,6 +16,10 @@ p {
 	line-height: 1.5;
 }
 
+address {
+	font-style: normal;
+	line-height: 1.5;
+}
 
 .list {
 	padding-left: 18px;
@@ -30,12 +36,8 @@ p {
 	}
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $md) {
 	h2 {
 		font-size: 24px;
-	}
-
-	h3 {
-		font-size: 20px;
 	}
 }

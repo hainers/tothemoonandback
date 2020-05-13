@@ -33,7 +33,7 @@
 	}
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $md) {
 	.grid-item {
 		&--md-33 {
 			flex: 0 0 50%;
@@ -46,13 +46,13 @@
 	}
 }
 
-@media only screen and (min-width: $laptop) {
+@media only screen and (min-width: $lg) {
 	.grid-row {
 		padding: 0;
 	}
 }
 
-@media only screen and (min-width: $desktop) {
+@media only screen and (min-width: $xl) {
 	.container {
 		padding: 0 24px;
 	}

@@ -35,16 +35,22 @@
   .container {
     padding: 0 24px; } }
 h2 {
-  margin: 0 0 24px;
+  margin: 0 0 16px;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase; }
 
 h3 {
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase; }
 
 p {
   margin-bottom: 32px;
+  line-height: 1.5; }
+
+address {
+  font-style: normal;
   line-height: 1.5; }
 
 .list {
@@ -59,12 +65,17 @@ p {
 
 @media only screen and (min-width: 720px) {
   h2 {
-    font-size: 24px; }
-
-  h3 {
-    font-size: 20px; } }
+    font-size: 24px; } }
 .section {
   padding: 0; }
+  .section__heading--dark {
+    margin-bottom: 16px;
+    color: #2C3E50; }
+  .section__heading--light {
+    margin-bottom: 40px;
+    color: #FFFFFF; }
+  .section__heading--small {
+    margin-bottom: 32px; }
   .section--hero {
     position: relative;
     height: 238px;
@@ -73,14 +84,19 @@ p {
   .section__scroll-icon--hero {
     display: none; }
   .section--content {
+    padding: 12px 0;
     background: url("../assets/images/pattern.png"); }
   .section--info {
+    padding: 14px 0;
     background: url("../assets/images/mobile-mid.png") no-repeat;
     background-size: cover;
     color: #FFFFFF; }
+  .section--maps {
+    height: 420px;
+    width: 100%; }
   .section--auction {
     justify-content: center;
-    padding: 24px 16px; }
+    padding: 40px 16px; }
   .section--no-paddings {
     padding: 0 !important; }
 
@@ -90,9 +106,12 @@ p {
 @media only screen and (min-width: 720px) {
   .section {
     padding: 32px 0; }
+    .section__heading--dark {
+      margin-bottom: 28px; }
     .section--hero {
-      background-image: url("../assets/images/top.png");
-      height: 60vh; }
+      background: url("../assets/images/top.png") no-repeat center;
+      background-size: cover;
+      height: 600px; }
     .section--auction {
       padding: 32px 16px; }
     .section__scroll-icon--hero {
@@ -103,17 +122,15 @@ p {
       display: block; } }
 @media only screen and (min-width: 1000px) {
   .section--hero {
-    height: 70vh; } }
+    height: 700px; } }
 @media only screen and (min-width: 1200px) {
   .section {
     padding: 48px 0; }
-    .section--hero {
-      height: 83vh; }
     .section--auction {
-      padding: 32px 0 64px; } }
+      padding: 32px 0 72px; } }
 @media only screen and (min-width: 1400px) {
   .section {
-    padding: 64px 0; } }
+    padding: 72px 0; } }
 .auction-section__title {
   flex-basis: 100%;
   margin-top: 0;
@@ -171,22 +188,26 @@ p {
     margin: 0;
     color: #FF3232; }
 
+@media only screen and (min-width: 410px) {
+  .auction__info--price, .auction__info--bids {
+    order: 0;
+    flex: 0 1 28%; }
+  .auction__info--end-date {
+    flex: 1 0 33%;
+    margin-top: 8px; } }
 @media only screen and (min-width: 720px) {
   .auction {
     flex-direction: row;
     justify-content: space-around;
     align-items: center; }
     .auction__image {
-      flex: 0 0 40%; }
+      flex: 0 1 40%; }
     .auction__content {
       flex: 0 0 60%; }
     .auction__title {
       margin-top: 0; }
     .auction__info {
-      flex: 0 0 33%;
       margin-top: 0; }
-      .auction__info--price, .auction__info--bids {
-        order: 0; }
     .auction__info-highlight {
       font-size: 18px; } }
 @media only screen and (min-width: 1200px) {
@@ -217,17 +238,14 @@ body {
   font-size: 14px;
   color: #2c3e50; }
 
-address {
-  font-style: normal; }
-
-.no-margin-bottom {
+.margin-bottom-none {
   margin-bottom: 0; }
+
+.margin-bottom-double {
+  margin-bottom: 16px; }
 
 @media only screen and (min-width: 720px) {
   .show-on-sm {
     display: none; } }
-#map {
-  height: 420px;
-  width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

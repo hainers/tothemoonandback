@@ -39,6 +39,10 @@ new Vue({
 			});
 		},
 		formatDate: function(date) {
+			if (!date) {
+				return null;
+			}
+
 			const dateObject = new Date(date);
 			const dd = ("0" + dateObject.getDate()).slice(-2);
 			const mm  = ("0" + (dateObject.getMonth() + 1)).slice(-2);
@@ -59,23 +63,13 @@ new Vue({
 	}
 });
 
-
-// smooth scrolling fallback in case the browser doesn't support css scroll-behavior: smooth;
-document.querySelector('.section__scroll-icon--hero').addEventListener('click', function(e) {
-	e.preventDefault();
-	document.querySelector('.section--auction').scrollIntoView({
-		behavior: 'smooth'
-	});
-});
-
-
 // Google maps API connection and settings
 var geocoder;
 var map;
 var address = "maakri 23a, tallinn";
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 17,
+		zoom: 18,
 		center: {lat: -34.397, lng: 150.644},
 		scrollwheel: false,
 		disableDoubleClickZoom: true,
