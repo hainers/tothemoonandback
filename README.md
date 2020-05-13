@@ -1,5 +1,8 @@
 # Hainer Savimaa test project for Allepal 
 
+## Adding dynamic osta.ee id
+To add a dynamic id for the page one should add ?id=[OSTA_ITEM_ID] to the end of the URL. For example: 137309101
+
 ## About development
 The tech stack used for this project: HTML, Vue & SCSS. I also used axios for managing the API request. 
 I decided to use Vue for creating the 'viimased oksjonid' component because it is really lightweight and 
