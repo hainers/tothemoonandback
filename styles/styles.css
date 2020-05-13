@@ -116,7 +116,7 @@ address {
       padding: 32px 16px; }
     .section__scroll-icon--hero {
       position: absolute;
-      bottom: 24px;
+      bottom: 54px;
       left: 50%;
       transform: translateX(-50%);
       display: block; } }
