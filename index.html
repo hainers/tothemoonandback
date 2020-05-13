@@ -35,14 +35,14 @@
 						<img :src="item.imageUrl" class="auction__img" alt="Viimase oksjoni kaanepilt"/>
 						<figcaption>{{ item.title }}</figcaption>
 					</figure>
-					<div class="auction__content">
+					<div class="auction__content" :class="{ 'auction__content--rearranged': item.endDate }">
 						<h3 class="auction__title">{{ item.title }}</h3>
 						<div class="auction__info auction__info--price">
 							<span class="auction__info-highlight">{{ item.currentPrice }}€</span>
 							<span class="auction__info-name">hetke hind</span>
 						</div>
 						<div class="auction__info auction__info--end-date">
-							<span class="auction__info-highlight">{{ item.endDate }}</span>
+							<span class="auction__info-highlight">{{ item.endDate || 'puudub' }}</span>
 							<span class="auction__info-name">oksjoni lõpp</span>
 						</div>
 						<div class="auction__info auction__info--bids">
