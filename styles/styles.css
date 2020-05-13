@@ -206,7 +206,9 @@ address {
     .auction__image {
       flex: 0 1 40%; }
     .auction__content {
-      flex: 0 0 60%; }
+      flex: 0 0 50%; }
+      .auction__content--rearranged .auction__info--end-date {
+        margin-top: 0; }
     .auction__title {
       margin-top: 0; }
     .auction__info {

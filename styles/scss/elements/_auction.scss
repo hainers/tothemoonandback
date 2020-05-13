@@ -126,7 +126,14 @@
 		}
 
 		&__content {
-			flex: 0 0 60%;
+			flex: 0 0 50%;
+
+			&--rearranged {
+
+				.auction__info--end-date {
+					margin-top: 0;
+				}
+			}
 		}
 
 		&__title {
