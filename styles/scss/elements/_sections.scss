@@ -27,13 +27,6 @@
 	&--auction {
 		justify-content: center;
 		padding: 24px 16px;
-
-		.auction-section__title {
-			flex-basis: 100%;
-			margin-top: 0;
-			color: $gray;
-			font-weight: 600;
-		}
 	}
 
 	&--no-paddings {

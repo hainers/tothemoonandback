@@ -1,3 +1,11 @@
+.auction-section__title {
+	flex-basis: 100%;
+	margin-top: 0;
+	color: $gray;
+	font-weight: 600;
+	text-align: center;
+}
+
 .auction {
 	display: flex;
 	flex-direction: column;
@@ -53,7 +61,7 @@
 	}
 
 	&__img {
-		max-height: 220px;
+		max-width: 100%;
 	}
 
 }

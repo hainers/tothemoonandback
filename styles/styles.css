@@ -81,11 +81,6 @@ p {
   .section--auction {
     justify-content: center;
     padding: 24px 16px; }
-    .section--auction .auction-section__title {
-      flex-basis: 100%;
-      margin-top: 0;
-      color: #999999;
-      font-weight: 600; }
   .section--no-paddings {
     padding: 0 !important; }
 
@@ -119,6 +114,13 @@ p {
 @media only screen and (min-width: 1400px) {
   .section {
     padding: 64px 0; } }
+.auction-section__title {
+  flex-basis: 100%;
+  margin-top: 0;
+  color: #999999;
+  font-weight: 600;
+  text-align: center; }
+
 .auction {
   display: flex;
   flex-direction: column;
@@ -155,7 +157,7 @@ p {
     .auction__image figcaption {
       display: none; }
   .auction__img {
-    max-height: 220px; }
+    max-width: 100%; }
 
 .auction-response {
   display: flex;
