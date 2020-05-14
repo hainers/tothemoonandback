@@ -10,7 +10,7 @@ fast JS framework which makes state and template handling more easier. I importe
 but originally did the whole thing as a vue project, but decided it was a bit of an overkill. I also added error message for 
 handling API errors and loading message when the API connection is still ongoing so that the user would be aware of what is happening.
 I decided to make an exception for end date aswell:  if no end date is coming through the API I decided to display 'puudub' instead of having an empty place.
-I decided to set maximum width of the page container to 1400px because otherwise I felt like the assets(backgrounds) were too pixelated.
+I decided to set maximum width of the page container to 1500px because otherwise I felt like the assets(backgrounds) were too pixelated.
 
 ## Feedback about design
 The biggest thing I noticed about the design was that spacing (headings,sections) and some font sizes (mostly headings) for the same element were different in different sections. 
